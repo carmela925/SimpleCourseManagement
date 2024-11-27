@@ -1,0 +1,36 @@
+h1,h3,p{margin: 0; padding: 0;}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    i{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+ion-searchbar{
+    --box-shadow: none;
+    padding: 0;
+    width: 100%;
+}
+
+@keyframes slide {
+    0%{width: 0;}
+    100%{width: 100%;}
+}
+
+ion-item{
+    i{
+        margin-right: 20px;
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        background-color: #000;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,21 @@
+<ion-content class="ion-padding" [fullscreen]="true">
+<div class="flex-item">
+  <ion-buttons>
+    <ion-button routerLink="/courses">
+      <i class="fa-solid fa-chevron-left"></i>
+    </ion-button>
+  </ion-buttons>
+  <h1>Add/Update Course</h1>
+</div>
+<form action="" (ngSubmit)="addCourse()" [formGroup]="courseForm">
+  <ion-input formControlName="title" label="Title" labelPlacement="floating"></ion-input>
+  <ion-textarea formControlName="description" label="Description" labelPlacement="floating"></ion-textarea>
+  <div class="flex-item">
+    <ion-input formControlName="code" label="Code" type="text" labelPlacement="floating"></ion-input>
+    <ion-input formControlName="credit" label="Credit" type="number" labelPlacement="floating"></ion-input>
+    <ion-input formControlName="duration" label="Duration" type="number" labelPlacement="floating"></ion-input>
+  </div>
+  <ion-textarea formControlName="outline" label="Outline" labelPlacement="floating"></ion-textarea>
+  <ion-button type="submit">Save</ion-button>
+</form>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-content class="ion-padding">
+  <header>
+    <i class="fa-solid fa-clipboard-list"></i>
+    <h1>Courses</h1>
+    <ion-searchbar [class.active]="active" [(ngModel)]="searchText" (ionInput)="search()" animated="true" placeholder="search"></ion-searchbar>
+  </header>
+  <main>
+    <ion-list lines="none">
+      @for (course of courses; track $index) {
+        <ion-item [routerLink]="['/course-details', course.code]">
+          <i class="fa-solid fa-book"></i>
+          <ion-label>
+            <h3>{{course.title}}</h3>
+            <p class="description">{{course.description}}</p>
+            <p class="duration">{{course.duration}} hours</p>
+          </ion-label>
+        </ion-item>
+      }
+    </ion-list>
+  </main>
+</ion-content>

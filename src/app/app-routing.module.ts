@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'courses',
+    loadChildren: () => import('./pages/courses/courses.module').then( m => m.CoursesPageModule)
+  },
+  {
+    path: 'course-details/:id',
+    loadChildren: () => import('./pages/course-details/course-details.module').then( m => m.CourseDetailsPageModule)
+  },
+  {
+    path: 'add-course/:id',
+    loadChildren: () => import('./pages/add-course/add-course.module').then( m => m.AddCoursePageModule)
+  },
+  {
+    path: 'add-course',
+    loadChildren: () => import('./pages/add-course/add-course.module').then( m => m.AddCoursePageModule)
+  },
 ];
 
 @NgModule({

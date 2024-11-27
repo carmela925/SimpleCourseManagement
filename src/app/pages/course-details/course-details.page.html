@@ -1,0 +1,19 @@
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-buttons>
+    <ion-button routerLink="/courses">
+      <i class="fa-solid fa-chevron-left"></i>
+    </ion-button>
+  </ion-buttons>
+  <div class="flex-text">
+    <p>{{course?.code}}</p>
+    <p>{{course?.creditValue}}</p>
+  </div>
+  <h1>{{course?.title}}</h1>
+  <p>{{course?.description}}</p>
+  <p>{{course?.outline}}</p>
+  <div class="flex-text">
+    <p>{{course?.duration}}</p>
+    <ion-button (click)="updateCourse(course!.code)"><i class="fa-solid fa-pen"></i></ion-button>
+    <ion-button (click)="deleteCourse(course!.code)"><i class="fa-solid fa-trash"></i></ion-button>
+  </div>
+</ion-content>
