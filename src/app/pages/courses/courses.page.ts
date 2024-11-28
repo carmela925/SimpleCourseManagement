@@ -14,6 +14,11 @@ export class CoursesPage implements OnInit {
   constructor(private dbService: DbService) { }
 
   ngOnInit() {
+    this.dbService.initializeCourseDatabase().then(() => {
+      console.log('Successfully initialized');
+    }).catch((e) => {
+      console.error('Error', e);
+    });
     this.getCourses();
   }
 

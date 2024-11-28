@@ -11,8 +11,6 @@ export class DbService implements OnInit{
 
   constructor(private sqlite: SQLite) { }
   ngOnInit(): void {
-    this.initializeCourseDatabase();
-    this.fetchCourses();
   }
 
   async initializeCourseDatabase() {
