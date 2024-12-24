@@ -31,7 +31,7 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss", "node_modules/@fortawesome/fontawesome-free/css/all.min.css"],
+            "styles": ["src/global.scss", "src/theme/variables.scss", "node_modules/@fortawesome/fontawesome-free/css/all.min.css","node_modules/maplibre-gl/dist/maplibre-gl.css"],
             "scripts": []
           },
           "configurations": {

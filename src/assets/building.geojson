@@ -1,0 +1,40 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-74.5, 40],
+              [-74.46, 40],
+              [-74.46, 40.06],
+              [-74.5, 40.06]
+            ]
+          ]
+        },
+        "properties": {
+          "room": "Living"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-74.5, 40],
+              [-74.44, 40],
+              [-74.44, 40.04],
+              [-74.5, 40.04]
+            ]
+          ]
+        },
+        "properties": {
+          "room": "Bedroom"
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,32 @@
+{
+    "version": 8,
+    "sources": {
+      "rooms": {
+        "type": "geojson",
+        "data": "assets/building.geojson" 
+      }
+    },
+    "layers": [
+      {
+        "id": "Living",
+        "type": "fill",
+        "source": "rooms",
+        "paint": {
+          "fill-color": "#f00",
+          "fill-opacity": 0.4
+        },
+        "filter": ["==", ["get", "room"], "Living"]
+      },
+      {
+        "id": "Bedroom",
+        "type": "fill",
+        "source": "rooms",
+        "paint": {
+          "fill-color": "#0f0",
+          "fill-opacity": 0.4
+        },
+        "filter": ["==", ["get", "room"], "Bedroom"]
+      }
+    ]
+  }
+  
